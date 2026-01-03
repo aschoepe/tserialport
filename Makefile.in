@@ -201,6 +201,11 @@ all: binaries libraries doc
 
 binaries: $(BINARIES)
 
+$(BINARIES): libserialport-build
+
+libserialport-build:
+	cd libserialport && $(MAKE)
+
 libraries:
 
 #========================================================================

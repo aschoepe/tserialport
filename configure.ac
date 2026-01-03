@@ -148,6 +148,15 @@ TEA_ENABLE_SHARED
 TEA_CONFIG_CFLAGS
 
 #--------------------------------------------------------------------
+# Remove obsolete -single_module flag on macOS
+#--------------------------------------------------------------------
+case $system in
+    Darwin-*)
+	SHLIB_LD=`echo "$SHLIB_LD" | sed 's/-Wl,-single_module *//'`
+	;;
+esac
+
+#--------------------------------------------------------------------
 # Set the default compiler switches based on the --enable-symbols option.
 #--------------------------------------------------------------------
 
