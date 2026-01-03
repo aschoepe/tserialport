@@ -1,6 +1,6 @@
-C libserialport\s0.1.1\s→\s0.1.2
-D 2026-01-03T16:53:23.153
-F .fossil-settings/ignore-glob 9fcfba6b44553f4c9fe11ae0ee9c8c4135491bc58f516fee8cd9afb2611a0219
+C Missing\s.h\sfile
+D 2026-01-03T18:24:08.029
+F .fossil-settings/ignore-glob 97828f52bf6faee55e32f74c5b6ef53f6c81d1480858913d238d17a822f5486f
 F .gitattributes 733e36ea315cad1b0e3225455af021ee6fa653befa2f404373d26200b9918998
 F ChangeLog a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a
 F LICENSE.serialport 42e6308fa943a307e3b50ba3a68cbbba767ef1eb2a5a8654f96d2e68a3a09e63
@@ -68,6 +68,7 @@ F libserialport/examples/projects/send_receive.vcxproj a27ab0ef96965617455dd403c
 F libserialport/examples/projects/send_receive.vcxproj.filters 457b5b1a3d4a96c890d497231a8c85de0b4f63762a79f5a8eb57d9514c1f47c1
 F libserialport/examples/send_receive.c 59ae6ac2a74635496ef75db648caa163cf6adf1ff45d8a43c7ea73350a8f18e2
 F libserialport/freebsd.c 7e1a049fb4d089d1e9cd414af9e971ca684186d531e4d09181628b81acbfeca6
+F libserialport/libserialport.h 75b4281d1506a56a7e340ef3897dc839cd7f2680c77d37bee80b2849b0b2b2e2
 F libserialport/libserialport.pc.in affb1bb0d32f5480d68a7f82744f0352b6a3ef57a6b83d7fa89d31478b774e1e
 F libserialport/libserialport.sln eec870f6c5b1dece4c20f2dd8a3517a815d1c3d38d50bb3a924b76215e611133
 F libserialport/libserialport.vcxproj b1a53b3f4156ea4f3428d23db147dde0648722d6c44d2ecee777f21accf98059
@@ -98,8 +99,8 @@ F win/makefile.vc b6f6eaa9252e0cf5dd59db5fd1f4fe1ec0b0a8b6e261698d478aed5d1ec595
 F win/nmakehlp.c 596eb953063417d11fd703856cb3342c47964e3e147c2542f8f237382b9c3be6
 F win/rules.vc 06f4eab1379d8741d904f40a425e23bb2d4e825d443c7f827a2e78eae2a6ac0c
 F win/tserialport.rc c6314520437a75c9fb7aac0ca88dd24c7ea3d81edce592a926da4f1a5a14b3ad x
-P 4b9effe50412913f555b00a9c8d77d143407a43f0b580ce3e9c39e46a9689ea1
-R 03c3a21df11af4e7e68c690b5f6ec2b2
+P a9d6c1391e7a3b2992836f83090783f04bd441a32700fd15c2e91b61bb31f280
+R ecb31a67ac3b8650246b07f02060c37b
 U alex
-Z 12e87e85fa85383f5d1bca40115fbccb
+Z 2b4a4a6b2d2a2781df4e18e25b8c2dad
 # Remove this line to create a well-formed Fossil manifest.

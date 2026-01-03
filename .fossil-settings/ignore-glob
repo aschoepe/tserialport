@@ -14,9 +14,6 @@ autom4te.cache/*
 libserialport/config.h
 libserialport/config.log
 libserialport/config.status
-libserialport/libserialport.h
-libserialport/libserialport.la
-libserialport/libserialport.pc
 libserialport/libtool
 libserialport/macosx.lo
 libserialport/Makefile
