@@ -396,11 +396,13 @@ clean:
 	-rm -f *.$(OBJEXT) core *.core
 	-rm -f sampleUuid.h manifest.h manifest.txt
 	-test -z "$(CLEANFILES)" || rm -f $(CLEANFILES)
+	-cd libserialport && $(MAKE) clean
 
 distclean: clean
 	-rm -f *.tab.c
 	-rm -f $(CONFIG_CLEAN_FILES)
 	-rm -f config.cache config.log config.status
+	-cd libserialport && $(MAKE) distclean
 
 #========================================================================
 # Install binary object libraries.  On Windows this includes both .dll and
