@@ -201,6 +201,6 @@ TEA_PROG_TCLSH
 #--------------------------------------------------------------------
 
 TEA_CONFIG_COLLECT
-TEA_CONFIG_SUBDIR(libserialport, [--enable-shared=no --disable-silent-rules])
+TEA_CONFIG_SUBDIR(libserialport, [--enable-shared=no --disable-silent-rules --with-pic])
 
 AC_OUTPUT([Makefile pkgIndex.tcl])

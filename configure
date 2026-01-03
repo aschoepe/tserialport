@@ -9269,7 +9269,7 @@ printf "%s\n" "${TCLSH_PROG}" >&6; }
 
 
     tea_config_dir="libserialport"
-    tea_config_arguments="--enable-shared=no --disable-silent-rules"
+    tea_config_arguments="--enable-shared=no --disable-silent-rules --with-pic"
     subdirs="$subdirs $tea_config_dir"
 
 
