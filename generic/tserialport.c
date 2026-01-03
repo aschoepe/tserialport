@@ -63,7 +63,7 @@
 #endif
 
 
-static int Tserialport_Getports (ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+static int Tserialport_Getports (void *clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
   Tcl_Obj *keyv[2];
   enum sp_return rc;
   struct sp_port **ports, *port;
@@ -480,8 +480,8 @@ Tserialport_Init(Tcl_Interp *interp) {
 		), NULL);
   }
 
-  Tcl_CreateObjCommand(interp, "::tserialport::getports", Tserialport_Getports, (ClientData)NULL, (Tcl_CmdDeleteProc *)NULL);
-  Tcl_CreateObjCommand(interp, "::tserialport::manifest", Tserialport_Manifest, (void *)NULL, (Tcl_CmdDeleteProc *)NULL);
+  Tcl_CreateObjCommand(interp, "::tserialport::getports", Tserialport_Getports, NULL, NULL);
+  Tcl_CreateObjCommand(interp, "::tserialport::manifest", Tserialport_Manifest, NULL, NULL);
 
   Tcl_PkgProvide(interp, PACKAGE_NAME, PACKAGE_VERSION);
   return TCL_OK;
