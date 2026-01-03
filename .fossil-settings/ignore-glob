@@ -1,3 +1,5 @@
+.DS_Store
+*.a
 *.o
 *.so
 *.dylib
@@ -21,3 +23,13 @@ libserialport/Makefile
 libserialport/serialport.lo
 libserialport/stamp-h1
 libserialport/stamp-h2
+libserialport/.deps/
+libserialport/.libs/
+libserialport/*.o
+libserialport/*.lo
+libserialport/*.la
+libserialport/*.pc
+libserialport/libtool
+libserialport/autom4te.cache/
+libserialport/test_timing
+libserialport/.DS_Store

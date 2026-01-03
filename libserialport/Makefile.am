@@ -23,11 +23,14 @@ AM_LIBTOOLFLAGS = --silent
 GNUMAKEFLAGS = --no-print-directory
 
 # Enable more compiler warnings.
-AM_CFLAGS = -std=c99 -Wall -Wextra -pedantic -Wmissing-prototypes -Wshadow -fPIC
+AM_CFLAGS = -std=c99 -Wall -Wextra -pedantic -Wmissing-prototypes -Wshadow
+# Set flag used in libserialport.h to indicate we are building the library
+# using autotools.
+AM_CFLAGS += -DLIBSERIALPORT_ATBUILD
 
 lib_LTLIBRARIES = libserialport.la
 
-libserialport_la_SOURCES = serialport.c libserialport_internal.h
+libserialport_la_SOURCES = serialport.c timing.c libserialport_internal.h
 if LINUX
 libserialport_la_SOURCES += linux.c linux_termios.c linux_termios.h
 endif
@@ -48,14 +51,30 @@ if MACOSX
 libserialport_la_LDFLAGS += -framework IOKit -framework CoreFoundation
 endif
 
-nodist_include_HEADERS = libserialport.h
+library_includedir = $(includedir)
+library_include_HEADERS = libserialport.h
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = libserialport.pc
 
-EXTRA_DIST = Doxyfile
+TESTS = test_timing
+check_PROGRAMS = test_timing
+test_timing_SOURCES = timing.c test_timing.c
+test_timing_CFLAGS = $(AM_CFLAGS)
 
-MAINTAINERCLEANFILES = ChangeLog
+EXTRA_DIST = Doxyfile \
+	examples/Makefile \
+	examples/README \
+	examples/list_ports.c \
+	examples/port_info.c \
+	examples/port_config.c \
+	examples/await_events.c \
+	examples/handle_errors.c \
+	examples/send_receive.c \
+	examples/examples.sln \
+	examples/projects
+
+DISTCLEANFILES = ChangeLog
 
 .PHONY: ChangeLog doc
 
