@@ -19,7 +19,7 @@ dnl	to configure the system for the local environment.
 # so that we create the export library with the dll.
 #-----------------------------------------------------------------------
 
-AC_INIT([tserialport], [1.1])
+AC_INIT([tserialport],[1.2])
 
 #--------------------------------------------------------------------
 # Call TEA_INIT as the first TEA_ macro to set up initial vars.
@@ -203,4 +203,5 @@ TEA_PROG_TCLSH
 TEA_CONFIG_COLLECT
 TEA_CONFIG_SUBDIR(libserialport, [--enable-shared=no --disable-silent-rules --with-pic])
 
-AC_OUTPUT([Makefile pkgIndex.tcl])
+AC_CONFIG_FILES([Makefile pkgIndex.tcl])
+AC_OUTPUT
