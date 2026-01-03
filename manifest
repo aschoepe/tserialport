@@ -1,5 +1,5 @@
-C Adjustments\sMakefile.in,\spkgIndex.tcl.in;\sAdded\smkversion.tcl\sand\sBuild-Info\scommand\sTIP\s599
-D 2026-01-03T12:38:27.428
+C Deprecated\smacOS\sAPI\sin\slibserialport:\skIOMasterPortDefault\s→\skIOMainPortDefault
+D 2026-01-03T12:39:42.050
 F .gitattributes 733e36ea315cad1b0e3225455af021ee6fa653befa2f404373d26200b9918998
 F ChangeLog a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a
 F LICENSE.serialport 42e6308fa943a307e3b50ba3a68cbbba767ef1eb2a5a8654f96d2e68a3a09e63
@@ -48,7 +48,7 @@ F libserialport/libserialport_internal.h 483389b3f7cedabfa71d46d0b9a8efd69d57a65
 F libserialport/linux.c 6ea49bd32a9cdc7ad71423772ef3175b33d779947961a90cef54b558895c32cb
 F libserialport/linux_termios.c a4def801054dd704ad01c29805ae983963fb89c20571bad57cd3a779e77020b3
 F libserialport/linux_termios.h 61d2018f66e0486d700edd0a6b7b552b164f9bbcb64850759c7ac1c5cd3971b4
-F libserialport/macosx.c de4d188a6ea4586b193d1959fada5d8184e624327f2f716f54337115e2eeb34e
+F libserialport/macosx.c 20816795ea3e05380dbeed314bb1fae3a16a80c74914d0c1b138421195fbd0cd
 F libserialport/serialport.c af6a97cd24e8b48d9f2bdf2f43a0b97a33ba3d8354b2b0cb7f067307684bf4d9
 F libserialport/windows.c c8294ca01f8a24b4e0add37b3ae0cca3f06e313ac476be8df55c23225aea94b4
 F license.terms b05ccace3d99bc48e1a17be010e361e2db612987b9f0d5172026fe6cb111bbaa
@@ -66,8 +66,8 @@ F win/makefile.vc b6f6eaa9252e0cf5dd59db5fd1f4fe1ec0b0a8b6e261698d478aed5d1ec595
 F win/nmakehlp.c 596eb953063417d11fd703856cb3342c47964e3e147c2542f8f237382b9c3be6
 F win/rules.vc 06f4eab1379d8741d904f40a425e23bb2d4e825d443c7f827a2e78eae2a6ac0c
 F win/tserialport.rc c6314520437a75c9fb7aac0ca88dd24c7ea3d81edce592a926da4f1a5a14b3ad x
-P 8545903dc5141c8c4713639b14cb43afe6962e7bfd9f9723fc20e5a1c15e220a
-R 772a2ea96775c40ba5e0aec2bc34f389
+P 2ff2495d9051f19922f2bd700e1fd73434454228da521476b3e284be6e48765c
+R 7bb8429256469026cb2f946880ca8523
 U alex
-Z 36674a397b78443cffdb72114a58f0d1
+Z a35fa0723c11565d5c7a5fe5be9730ef
 # Remove this line to create a well-formed Fossil manifest.
