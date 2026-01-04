@@ -1,10 +1,10 @@
-C Version-1.2\snow\sTcl\s9.x\scompatible
-D 2026-01-03T18:56:01.317
+C Cleanup\sMakefile.in
+D 2026-01-04T23:13:32.004
 F .fossil-settings/ignore-glob 97828f52bf6faee55e32f74c5b6ef53f6c81d1480858913d238d17a822f5486f
 F .gitattributes 733e36ea315cad1b0e3225455af021ee6fa653befa2f404373d26200b9918998
 F ChangeLog a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a
 F LICENSE.serialport 42e6308fa943a307e3b50ba3a68cbbba767ef1eb2a5a8654f96d2e68a3a09e63
-F Makefile.in bd4bacaaa32f2fa8ff6f3a2823205c6f62b00a3b8ded440adeddb6d094963225
+F Makefile.in 3e4806c98da97adc7fc14b52e3e0dca597350f0784e348f56caa3e63e5cf1cca
 F README a1c2a62fef877a5d16a995da3e4c5c25a53d346fbfc45e0c8e71f3d2e601c37b
 F aclocal.m4 25400846de35f1b873c9cec97b380e63cce4f96e377e33e40dba70dc2917bdd0
 F configure 0a272f5f86292d50bb01234f9e415e419639c360df3463a5e4a97ade07bce254 x
@@ -99,11 +99,8 @@ F win/makefile.vc b6f6eaa9252e0cf5dd59db5fd1f4fe1ec0b0a8b6e261698d478aed5d1ec595
 F win/nmakehlp.c 596eb953063417d11fd703856cb3342c47964e3e147c2542f8f237382b9c3be6
 F win/rules.vc 06f4eab1379d8741d904f40a425e23bb2d4e825d443c7f827a2e78eae2a6ac0c
 F win/tserialport.rc c6314520437a75c9fb7aac0ca88dd24c7ea3d81edce592a926da4f1a5a14b3ad x
-P 27bb94f0145ed140672136086c47ffcdde087d64c0553635f42d1f5eeb8e4da3
-R 9d0a8a12c7cc266e3d0becd23f5d73a5
-T +bgcolor * #fea5f4
-T +sym-release *
-T +sym-version-1.2 *
+P f57abc5c5ee2a5389bb615f9a67661072fdce58a55278cfba278e31ba5aa3fa3
+R 028e0a5b3548ef2142e43c4ef353f968
 U alex
-Z 10e544ef7cd5232d377c5046f287f475
+Z 1d84835dcd496ba971d095fcc4236aa9
 # Remove this line to create a well-formed Fossil manifest.
