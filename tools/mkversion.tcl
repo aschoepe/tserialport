@@ -12,6 +12,27 @@ set optDefines 0
 set optPkgName 0
 set pkgName {}
 
+# Parse the command line first, before any manifest file is read:
+#   -defines  output as C #define lines
+#   -name     prefix the names with the package name (from AC_INIT)
+#   -C dir    change the working directory before reading the files
+#             manifest, manifest.uuid and configure.ac; needed when the
+#             script is not started from the project root (e.g. nmake
+#             builds running in the win subfolder).
+for {set i 0} {$i < [llength $argv]} {incr i} {
+  switch -exact -- [lindex $argv $i] {
+    -defines {
+      set optDefines 1
+    }
+    -name {
+      set optPkgName 1
+    }
+    -C {
+      cd [lindex $argv [incr i]]
+    }
+  }
+}
+
 
 # Note:
 # fossil GUI Settings Manifest = on.
@@ -170,17 +191,6 @@ package provide 1.0
 # then this command returns the name of the innermost file being processed. If filename is specified, then the return value of this command will be modified
 # for the duration of the active invocation to return that name. This is useful in virtual file system applications. Otherwise the command returns an empty string.
 set ::pkgname::pkgPath [file dirname [info script]]
-}
-
-foreach arg $argv {
-  switch -exact -- $arg {
-    -defines {
-      set optDefines 1
-    }
-    -name {
-      set optPkgName 1
-    }
-  }
 }
 
 if {$optDefines} {

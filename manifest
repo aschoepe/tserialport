@@ -1,5 +1,5 @@
-C Cleanup\sMakefile.in
-D 2026-01-04T23:13:32.004
+C Fix\sWindows\snmake\sbuild:\sTIP\s477\smakefile.vc,\srules-ext.vc/targets.vc\sadded,\smkversion.tcl\s-C\soption,\sstale\snacl\sdocs\sremoved.\sThanks\sto\sHarald\sfor\sthe\sreport\sand\sthe\smakefile\sskeleton,\sticket\s[281432f916]
+D 2026-07-03T08:33:31.296
 F .fossil-settings/ignore-glob 97828f52bf6faee55e32f74c5b6ef53f6c81d1480858913d238d17a822f5486f
 F .gitattributes 733e36ea315cad1b0e3225455af021ee6fa653befa2f404373d26200b9918998
 F ChangeLog a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a
@@ -9,8 +9,6 @@ F README a1c2a62fef877a5d16a995da3e4c5c25a53d346fbfc45e0c8e71f3d2e601c37b
 F aclocal.m4 25400846de35f1b873c9cec97b380e63cce4f96e377e33e40dba70dc2917bdd0
 F configure 0a272f5f86292d50bb01234f9e415e419639c360df3463a5e4a97ade07bce254 x
 F configure.ac b208aaa8873a2710309be04b84490852b0ab5ec3af0db1eb56231453ff0ca528
-F doc/examples.txt 9e02d753f6cbb89b184874bd90591bea9df8b86ce5039e7b0982c0d4783d36db
-F doc/help.txt e5b80ba9f8b9cf5666a1725250f3d03b8e77238224a770bd268c09c7d42e8f26
 F doc/tserialport.n 8f2f4e0fb2893170c732ecf7e0a47feac6a7e8295a86b3352a337223ac92ed4d
 F generic/tserialport.c 58c1aeaca2e1cf138f3fd4f670c5e97b35b778e21955ec8e957c652e9bf87924 x
 F libserialport/AUTHORS 5fa8ebed8a5bdd14ed81abf8884ded37996e3ebbd5be36838d84a28fff47f44b
@@ -94,13 +92,15 @@ F tclconfig/tcl.m4 3565d3c5df429387def7de0237662d3b8b63fae745c6606f5b3f5a1e1f403
 F tests/all.tcl 5f87ca6b7d1e5bf0aa6e3a7fa4408f629ab2a224cc20910fb12ea6928f1aecbd
 F tests/info.test d6c2d3cc3dec9052f99fc141c8f9ec3684d8ba36eae7d88c65011eeadb704bda
 F tests/test.tcl 2cc09d8efbf87c5d5d2a4ed802f861f34c90a6724d5a251f042c5c37c6809273 x
-F tools/mkversion.tcl 79af84aa1e11456632dfb9527293bff4f9038693a7f8ce4e1dd35cabd00122e2
-F win/makefile.vc b6f6eaa9252e0cf5dd59db5fd1f4fe1ec0b0a8b6e261698d478aed5d1ec59564
+F tools/mkversion.tcl c83daec1d8d376510651f5449caf59c81dff0427ed727f0bc837ea3c7a0d2e96
+F win/makefile.vc 587a54f99157b06254808b373ad71295be08ae32ad3b7faaec9402c9dd3db261
 F win/nmakehlp.c 596eb953063417d11fd703856cb3342c47964e3e147c2542f8f237382b9c3be6
+F win/rules-ext.vc 50db9d785c66e5b35a5573717ce96340b0bc54ed5659cdb2209ae11fe2cdfe60
 F win/rules.vc 06f4eab1379d8741d904f40a425e23bb2d4e825d443c7f827a2e78eae2a6ac0c
+F win/targets.vc 749fa6a10aaebccddbe96ff35f770871ae6a60a89331e22322a743dc124bbdc7
 F win/tserialport.rc c6314520437a75c9fb7aac0ca88dd24c7ea3d81edce592a926da4f1a5a14b3ad x
-P f57abc5c5ee2a5389bb615f9a67661072fdce58a55278cfba278e31ba5aa3fa3
-R 028e0a5b3548ef2142e43c4ef353f968
+P c9473e82fdd7e75fa082b610af1c3c3aad68a9ca090e01bad3bf32d81685454d
+R c87c40e7cad62e204a5d2ae09a825e94
 U alex
-Z 1d84835dcd496ba971d095fcc4236aa9
+Z fdba19a083b5c4889f53d2b7a05af9ef
 # Remove this line to create a well-formed Fossil manifest.
